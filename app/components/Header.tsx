@@ -3,8 +3,8 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="grid grid-cols-12 my-[30px] md:py-[100px]">
-      <div className="col-span-8 pr-[100px]">
+    <div className="flex flex-col-reverse md:grid md:grid-cols-12 my-[30px] md:py-[100px]">
+      <div className="md:col-span-8 md:pr-[100px]">
         <h2 className="text-3xl font-bold">I am Hoai!</h2>
         <p>
           I&rsquo;m a full-stack developer (Vue.js, React.js & Node.js). I am
@@ -54,7 +54,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="col-span-4">
+      <div className="md:col-span-4">
         <div className="mx-auto flex">
           <div className=" w-[200px] h-[200px] rounded-full bg-gradient-to-b from-pink-500 to-blue-500 p-1">
             <Image
