@@ -7,8 +7,8 @@ const Navbar = () => {
   const [isShowSideBar, setShowSideBar] = useState<Boolean>(false);
 
   return (
-    <section>
-      <nav className="md:container md:mx-auto flex md:mt-[41px] p-[8px] items-center">
+    <section className="sticky top-0 z-10 bg-[#292828]">
+      <div className="md:container md:mx-auto flex p-[8px] items-center">
         <div className="text-2xl font-bold">{"<HT/>"}</div>
         <div className="ml-auto gap-x-[55px] hidden md:flex">
           <div>
@@ -18,7 +18,7 @@ const Navbar = () => {
             <Link href="#">About</Link>
           </div>
           <div>
-            <Link href="#">Tech Stack</Link>
+            <Link href="#tech-stack">Tech Stack</Link>
           </div>
 
           <div>
@@ -37,7 +37,7 @@ const Navbar = () => {
             alt="menu"
           />
         </div>
-      </nav>
+      </div>
       <div className="border-b md:border-0 border-b-[#3f3f3f]"></div>
 
       <div className="relative">
@@ -50,9 +50,9 @@ const Navbar = () => {
 
         <div
           className={`
-        fixed top-0 left-0 bg-[#292828] w-[80vw] sm:w-[45vw] h-full z-40 ease-in-out duration-300 translate-x-[${
-          isShowSideBar ? 0 : "-100%"
-        }]
+        fixed top-0 left-0 bg-[#292828] w-[80vw] sm:w-[45vw] h-full z-40 ease-in-out duration-300 ${
+          isShowSideBar ? "translate-x-[0]" : "translate-x-[-100%]"
+        }
       `}
         >
           <div
@@ -72,20 +72,30 @@ const Navbar = () => {
 
           <div className="mt-5 px-2">
             <div>
-              <Link className="py-2 block" href="#">Home</Link>
+              <Link className="py-2 block" href="#home">
+                Home
+              </Link>
             </div>
             <div>
-              <Link className="py-2 block" href="#">About</Link>
+              <a className="py-2 block" href="#about">
+                About
+              </a>
             </div>
             <div>
-              <Link className="py-2 block" href="#">Tech Stack</Link>
+              <Link className="py-2 block" href="#tech-stack">
+                Tech Stack
+              </Link>
             </div>
 
             <div>
-              <Link className="py-2 block" href="#">Projects</Link>
+              <Link className="py-2 block" href="#">
+                Projects
+              </Link>
             </div>
             <div>
-              <Link className="py-2 block" href="#">Contact</Link>
+              <Link className="py-2 block" href="#">
+                Contact
+              </Link>
             </div>
           </div>
         </div>
