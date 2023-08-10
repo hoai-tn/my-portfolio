@@ -5,7 +5,7 @@ const AboutMe = () => {
   return (
     <section id="about" className="mx-auto">
       <h2 className="text-2xl text-center">About me</h2>
-      <div className="flex flex-col md:flex-row justify-between gap-x-20 mt-10">
+      <div className="flex flex-col md:flex-row justify-between gap-x-20 pt-10">
         <div className="md:basis-2/5">
           <img
             className=" w-full object-fill"

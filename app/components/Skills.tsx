@@ -21,7 +21,7 @@ const Skills = () => {
     { image: "icon-git.svg", text: "Git" },
   ];
   return (
-    <section id="tech-stack" className="mt-20">
+    <section id="tech-stack" className="pt-20">
       <div className="text-center">
         <h2 className="text-2xl">My Tech Stack</h2>
         <p className="italic">
@@ -29,7 +29,7 @@ const Skills = () => {
         </p>
       </div>
       <div className="grid grid-cols-3 sm:grid-cols-6  md:grid-cols-8 gap-y-10 md:gap-x-[70px] mt-5">
-        {skills.map((item, index: Number) => (
+        {skills.map((item, index) => (
           <div key={index} className="mx-auto text-center">
             <Image
             className="hover:scale-110 transition-all"
