@@ -7,7 +7,7 @@ const Navbar = () => {
   const [isShowSideBar, setShowSideBar] = useState<Boolean>(false);
 
   return (
-    <section className="sticky top-0 z-10 bg-[#292828]">
+    <section className="sticky top-0 z-10 bg-[#2d2e2ef0]">
       <div className="md:container md:mx-auto flex p-[8px] items-center">
         <div className="text-2xl font-bold">{"<HT/>"}</div>
         <div className="ml-auto gap-x-[55px] hidden md:flex">

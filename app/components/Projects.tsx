@@ -42,9 +42,9 @@ const Projects = () => {
           return (
             <div
               key={index}
-              className={`flex ${
-                index % 2 == 0 || "flex-row-reverse"
-              } border border-gray-600 mb-5 p-[10px] rounded shadow-lg bg-[#60606063]`}
+              className={`md:flex ${
+                index % 2 == 0 || "md:flex-row-reverse"
+              } mb-5 p-[10px] rounded shadow-lg bg-[#2d2e2ef0]`}
             >
               <div className="basis-1/2 flex flex-col justify-between p-4 ">
                 <img
@@ -60,7 +60,7 @@ const Projects = () => {
                     <h4 className="text-xl font-semibold">{e.name}</h4>
                     <p className="mt-5">{e.descriptions}</p>
                   </div>
-                  <div className="flex flex-wrap gap-3 ">
+                  <div className="flex flex-wrap gap-3 mt-4 ">
                     {e.techs.map((tech, key) => (
                       <span
                         key={key}
