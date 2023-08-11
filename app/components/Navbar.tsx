@@ -12,23 +12,23 @@ const Navbar = () => {
         <div className="text-2xl font-bold">{"<HT/>"}</div>
         <div className="ml-auto gap-x-[55px] hidden md:flex">
           <div>
-            <Link href="#">Home</Link>
+            <a href="#">Home</a>
           </div>
           <div>
-            <Link href="#about">About</Link>
+            <a href="#about">About</a>
           </div>
           <div>
-            <Link href="#tech-stack">Tech Stack</Link>
+            <a href="#tech-stack">Tech Stack</a>
           </div>
 
           <div>
-            <Link href="#projects">Projects</Link>
+            <a href="#projects">Projects</a>
           </div>
           <div>
-            <Link href="#testimonials">Testimonials</Link>
+            <a href="#testimonials">Testimonials</a>
           </div>
           <div>
-            <Link href="#">Contact</Link>
+            <a href="#contact">Contact</a>
           </div>
         </div>
         <div className="ml-auto block md:hidden">
@@ -75,9 +75,9 @@ const Navbar = () => {
 
           <div className="mt-5 px-2">
             <div>
-              <Link className="py-2 block" href="#home">
+              <a className="py-2 block" href="#home">
                 Home
-              </Link>
+              </a>
             </div>
             <div>
               <a className="py-2 block" href="#about">
@@ -85,20 +85,24 @@ const Navbar = () => {
               </a>
             </div>
             <div>
-              <Link className="py-2 block" href="#tech-stack">
+              <a className="py-2 block" href="#tech-stack">
                 Tech Stack
-              </Link>
+              </a>
             </div>
-
             <div>
-              <Link className="py-2 block" href="#">
+              <a className="py-2 block" href="#testimonials">
+                Testimonials
+              </a>
+            </div>
+            <div>
+              <a className="py-2 block" href="#projects">
                 Projects
-              </Link>
+              </a>
             </div>
             <div>
-              <Link className="py-2 block" href="#">
+              <a className="py-2 block" href="#contact">
                 Contact
-              </Link>
+              </a>
             </div>
           </div>
         </div>
