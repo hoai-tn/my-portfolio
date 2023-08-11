@@ -78,7 +78,7 @@ const Experience = () => {
           <i className="font-semibold">Upwork</i>
           <div className="flex items-center">
             <div className="basis-1/2">
-              <p>JAN 2020 - current</p>
+              <p>AUG 2022 - current</p>
             </div>
             <img src="/images/upwork.svg" alt="upwork" width={100} />
           </div>
