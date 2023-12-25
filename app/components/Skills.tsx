@@ -15,7 +15,7 @@ const Skills = () => {
     { image: "icon-nodejs.svg", text: "Node.js" },
     { image: "icon-express.svg", text: "Express.js" },
     { image: "icon-mongodb.svg", text: "MongoDB" },
-    { image: "mysql.svg", text: "MySql" },
+    { image: "MySQL.png", text: "MySql" },
     { image: "icon-cypress.svg", text: "Cypress" },
     { image: "jest.svg", text: "Jest.js" },
     { image: "icon-git.svg", text: "Git" },

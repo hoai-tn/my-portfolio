@@ -11,7 +11,6 @@ const AboutMe = () => {
             className=" w-full object-fill"
             src="/images/avatar1.jpg"
             alt="javascript"
-            height="500px"
           />
         </div>
 
@@ -38,6 +37,13 @@ const AboutMe = () => {
             functionality across different devices and screen sizes. My
             attention to detail and commitment to delivering high-quality code
             make me valuable in any development project.
+          </p>
+          <p className="mt-3">
+            I complement my development skills with a strong foundation in unit
+            testing and end-to-end testing using tools like Jest for unit tests
+            and Cypress for comprehensive testing. This ensures that not only
+            are my applications feature-rich and visually compelling, but they
+            also meet high standards of reliability and performance.
           </p>
           <p className="mt-3">
             In addition to my technical proficiency, I am a continuous learner
