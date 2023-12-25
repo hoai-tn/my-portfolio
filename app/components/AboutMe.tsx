@@ -9,9 +9,9 @@ const AboutMe = () => {
         <div className="md:basis-2/5">
           <img
             className=" w-full object-fill"
-            src="/images/about_me.jpg"
+            src="/images/avatar1.jpg"
             alt="javascript"
-            width="500px"
+            height="500px"
           />
         </div>
 
