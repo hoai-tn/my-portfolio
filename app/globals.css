@@ -20,3 +20,35 @@ body {
   color: rgb(var(--foreground-rgb));
   background: rgb(41, 40, 40)
 }
+
+.custom-prev-arrow,
+.custom-next-arrow {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.custom-prev-arrow {
+  left: 10px;
+}
+
+.custom-next-arrow {
+  right: 10px;
+}
+
+.custom-prev-arrow svg,
+.custom-next-arrow svg {
+  width: 24px;
+  height: 24px;
+}
+
+.custom-prev-arrow:hover,
+.custom-next-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
