@@ -1,12 +1,12 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import {  Work_Sans } from "next/font/google";
+import { Work_Sans } from "next/font/google";
+import Script from "next/script";
 
 const merriweather = Work_Sans({
   subsets: ["latin"],
   weight: ["400", "700"],
 });
-
 
 export const metadata: Metadata = {
   title: "Hoai Tran Dev",
@@ -49,8 +49,20 @@ export default function RootLayout({
           href="/images/avatar.jpg"
           className="rounded-full"
         />
+        {/* Add the Google Tag Manager script */}
+        <Script id="gtm-script" strategy="afterInteractive">
+          {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PGRSWW4X');`}
+        </Script>
       </head>
       <body className={`${merriweather.className} overflow-x-hidden relative`}>
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-PGRSWW4X"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          ></iframe>
+        </noscript>
         <video
           autoPlay
           loop
@@ -59,9 +71,7 @@ export default function RootLayout({
         >
           <source src="/videos/header-bg-vi.mp4" type="video/mp4" />
         </video>
-        <div className="relative bg-[rgba(0,0,0,0.5)]">
-          {children}
-        </div>
+        <div className="relative bg-[rgba(0,0,0,0.5)]">{children}</div>
       </body>
     </html>
   );
