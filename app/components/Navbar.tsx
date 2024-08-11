@@ -1,13 +1,36 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Navbar = () => {
   const [isShowSideBar, setShowSideBar] = useState<Boolean>(false);
+  const [isScrolled, setIsScrolled] = useState<Boolean>(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <section className="sticky top-0 z-10 bg-[#2d2e2ef0]">
+    <section
+      className={`sticky top-0 z-10 transition-all duration-3000 ${
+        isScrolled
+          ? "bg-[#1d232042] shadow-lg backdrop-blur-md"
+          : "bg-transparent"
+      }`}
+    >
       <div className="md:container md:mx-auto flex p-[8px] items-center">
         <div className="text-2xl font-bold">{"<HT/>"}</div>
         <div className="ml-auto gap-x-[55px] hidden md:flex">

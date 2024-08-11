@@ -73,7 +73,7 @@ const Projects = () => {
               key={index}
               className={`md:flex ${
                 index % 2 === 0 || "md:flex-row-reverse"
-              } mb-5 p-[10px] rounded shadow-lg bg-[#2d2e2ef0]`}
+              } mb-5 p-[10px] rounded shadow-lg bg-[#262a2a78]`}
             >
               <div className="basis-1/2 flex flex-col justify-between p-4 ">
                 <Carousel
@@ -154,7 +154,7 @@ const Projects = () => {
                     {e.techs.map((tech, key) => (
                       <span
                         key={key}
-                        className="bg-gray-600 px-4 py-1 rounded-full"
+                        className="bg-[#2f943cb8] px-4 py-1 rounded-full"
                       >
                         {tech}
                       </span>

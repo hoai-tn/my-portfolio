@@ -43,7 +43,7 @@ const Testimonials = () => {
         {testimonials.map((item, index) => (
           <div
             key={index}
-            className="rounded shadow-lg p-4 bg-[#2d2e2ef0]"
+            className="rounded shadow-lg p-4 bg-[#262a2a78]"
           >
             <Link
               passHref

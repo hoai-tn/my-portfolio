@@ -1,8 +1,12 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import {  Work_Sans } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const merriweather = Work_Sans({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
+
 
 export const metadata: Metadata = {
   title: "Hoai Tran Dev",
@@ -24,9 +28,12 @@ export default function RootLayout({
           name="description"
           content="I’m a full-stack developer. I am not satisfied with my skill and working hard towards a higher skill. I have been developing web applications for over 4 years. I aim to make high-quality works with 100% effort for all customers."
         />
-        {/* <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" /> */}
-        <link rel="shortcut icon" href="/images/avatar.jpg"></link>
-        <meta property="og:image" content="/images/avatar1.jpg" />
+        <link
+          rel="shortcut icon"
+          href="/images/avatar.jpg"
+          className="rounded-full"
+        ></link>
+        <meta property="og:image" content="/images/avt.jpg" />
         <meta property="og:title" content="Hoai Tran Dev" />
         <meta
           property="og:description"
@@ -40,11 +47,22 @@ export default function RootLayout({
           type="image/png"
           sizes="32x32"
           href="/images/avatar.jpg"
+          className="rounded-full"
         />
-        {/* <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" /> */}
-        {/* <link rel="manifest" href="/site.webmanifest" /> */}
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={`${merriweather.className} overflow-x-hidden relative`}>
+        <video
+          autoPlay
+          loop
+          muted
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/videos/header-bg-vi.mp4" type="video/mp4" />
+        </video>
+        <div className="relative bg-[rgba(0,0,0,0.5)]">
+          {children}
+        </div>
+      </body>
     </html>
   );
 }
