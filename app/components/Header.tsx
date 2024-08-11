@@ -8,7 +8,7 @@ const Header = () => {
         <div className="md:col-span-8 md:pr-[100px]">
           <h2 className="text-3xl font-bold">I am Hoai!</h2>
           <p>
-            I&rsquo;m a full-stack developer (Vue.js, React.js & Node.js). I am
+            I&rsquo;m a full-stack developer. I am
             not satisfied with my skill and working hard towards a higher skill.
             I have been developing web applications for over 4 years. I aim to
             make high-quality works with 100% effort for all customers.
