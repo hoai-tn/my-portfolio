@@ -30,7 +30,7 @@ export default function RootLayout({
         />
         <link
           rel="shortcut icon"
-          href="/images/avatar.jpg"
+          href="/images/avt.jpg"
           className="rounded-full"
         ></link>
         <meta property="og:image" content="/images/avt.jpg" />
@@ -46,7 +46,7 @@ export default function RootLayout({
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/images/avatar.jpg"
+          href="/images/avt.jpg"
           className="rounded-full"
         />
         {/* Add the Google Tag Manager script */}
