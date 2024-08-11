@@ -25,8 +25,16 @@ export default function RootLayout({
           content="I’m a full-stack developer. I am not satisfied with my skill and working hard towards a higher skill. I have been developing web applications for over 4 years. I aim to make high-quality works with 100% effort for all customers."
         />
         {/* <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" /> */}
-        <link rel="shortcut icon"   href="/images/avatar.jpg"></link>
+        <link rel="shortcut icon" href="/images/avatar.jpg"></link>
         <meta property="og:image" content="/images/avatar1.jpg" />
+        <meta property="og:title" content="Hoai Tran Dev" />
+        <meta
+          property="og:description"
+          content="I’m a full-stack developer. I am not satisfied with my skill and working hard towards a higher skill. I have been developing web applications for over 4 years. I aim to make high-quality works with 100% effort for all customers"
+        />
+        <meta property="og:url" content="https://hoaitran.netlify.app" />
+        <meta property="og:type" content="website" />
+
         <link
           rel="icon"
           type="image/png"
