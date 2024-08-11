@@ -22,15 +22,15 @@ export default function RootLayout({
         <title>Hoai Tran Dev</title>
         <meta
           name="description"
-          content="I’m a full-stack developer (Vue.js, React.js & Node.js). I am not satisfied with my skill and working hard towards a higher skill. I have been developing web applications for over 4 years. I aim to make high-quality works with 100% effort for all customers."
+          content="I’m a full-stack developer. I am not satisfied with my skill and working hard towards a higher skill. I have been developing web applications for over 4 years. I aim to make high-quality works with 100% effort for all customers."
         />
         {/* <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" /> */}
-        <link rel="shortcut icon"   href="/images/avatar.png"></link>
+        <link rel="shortcut icon"   href="/images/avatar.jpg"></link>
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/images/avatar.png"
+          href="/images/avatar.jpg"
         />
         {/* <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" /> */}
         {/* <link rel="manifest" href="/site.webmanifest" /> */}
