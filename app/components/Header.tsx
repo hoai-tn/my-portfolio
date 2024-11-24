@@ -4,14 +4,6 @@ import React from "react";
 const Header = () => {
   return (
     <section className="relative">
-      <video
-        autoPlay
-        loop
-        muted
-        className="absolute inset-0 w-full h-full object-cover"
-      >
-        <source src="/videos/header-bg-vi.mp4" type="video/mp4" />
-      </video>
       <div className="relative bg-[rgba(0,0,0,0.5)] px-2">
         <div className="container mx-auto flex flex-col-reverse md:grid md:grid-cols-12 mb-[30px] md:py-[100px] ">
           <div className="md:col-span-8 md:pr-[100px]">

@@ -63,14 +63,14 @@ export default function RootLayout({
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
-        <video
+        {/* <video
           autoPlay
           loop
           muted
           className="absolute inset-0 w-full h-full object-cover"
         >
           <source src="/videos/header-bg-vi.mp4" type="video/mp4" />
-        </video>
+        </video> */}
         <div className="relative bg-[rgba(0,0,0,0.5)]">{children}</div>
       </body>
     </html>
