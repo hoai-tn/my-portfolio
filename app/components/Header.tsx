@@ -9,10 +9,10 @@ const Header = () => {
           <div className="md:col-span-8 md:pr-[100px]">
             <h2 className="text-3xl font-bold">I am Hoai!</h2>
             <p>
-              I&rsquo;m a full-stack developer. I am not satisfied with my skill
-              and working hard towards a higher skill. I have been developing
-              web applications for over 4 years. I aim to make high-quality
-              works with 100% effort for all customers.
+              I&rsquo;m a web developer. I have been developing web applications
+              for over 4 years. I am not satisfied with my skill and working
+              hard towards a higher skill. I aim to make high-quality works with
+              100% effort for all customers.
             </p>
             <div className="flex mt-10 gap-x-5">
               <div>
@@ -61,7 +61,7 @@ const Header = () => {
               <div className=" w-[250px] max-h-[250px] rounded-full bg-gradient-to-b from-pink-500 to-blue-500 p-1">
                 <Image
                   className="rounded-full max-h-[250px] object-cover"
-                  src="/images/avt.jpg"
+                  src="/images/avt-head.jpg"
                   width={250}
                   height={250}
                   alt="close"

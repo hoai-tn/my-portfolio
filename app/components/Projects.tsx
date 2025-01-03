@@ -39,9 +39,7 @@ const Projects = () => {
 
     {
       name: "HT Branch",
-      imgUrls: [
-        "/images/ht-branch.png",
-      ],
+      imgUrls: ["/images/ht-branch.png"],
       descriptions: `HT-Branch introduces a new dimension to the concept of a shopping cart, revolutionizing the way we browse, select, and purchase items online.<br>
       At its core, HT-Branch reimagines the traditional online shopping cart by integrating cutting-edge technologies to enhance the entire shopping experience.<br>
       Unlike conventional shopping carts that are often static and isolated, HT-Branch takes inspiration from the dynamic nature of branches in the natural world.<br>
@@ -55,7 +53,6 @@ const Projects = () => {
         "MongoDB",
       ],
     },
-
   ];
 
   return (
@@ -78,7 +75,8 @@ const Projects = () => {
               <div className="basis-1/2 flex flex-col justify-between p-4 ">
                 <Carousel
                   showThumbs={false}
-                  infiniteLoop
+                  infiniteLoop={true}
+                  transitionTime={500}
                   useKeyboardArrows
                   renderArrowPrev={(onClickHandler, hasPrev, label) =>
                     hasPrev && (
@@ -132,7 +130,7 @@ const Projects = () => {
                   }
                 >
                   {e.imgUrls.map((imgUrl, idx) => (
-                    <div key={idx}>
+                    <div key={idx} className="aspect-[21/9]">
                       <img
                         src={imgUrl}
                         alt={`${e.name} screenshot ${idx + 1}`}

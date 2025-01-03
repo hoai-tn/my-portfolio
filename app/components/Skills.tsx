@@ -3,17 +3,17 @@ import React from "react";
 
 const Skills = () => {
   const skills = [
-    { image: "js.svg", text: "javascript" },
-    { image: "icon-typescript.svg", text: "Typescript" },
     { image: "vue.svg", text: "Vue.js" },
+    { image: "nuxt.svg", text: "Nuxt.js" },
     { image: "icon-react.svg", text: "React.js" },
     { image: "Next.svg", text: "Next.js" },
-    { image: "nuxt.svg", text: "Nuxt.js" },
+    { image: "icon-nodejs.svg", text: "Node.js" },
+    { image: "c-sharp.png", text: "C#" },
+    { image: "icon-express.svg", text: "Express.js" },
+    { image: "icon-typescript.svg", text: "Typescript" },
     { image: "pinia.svg", text: "Pinia" },
     { image: "icon-sass.svg", text: "Sass" },
     { image: "icon-tailwindcss.svg", text: "Tailwindcss" },
-    { image: "icon-nodejs.svg", text: "Node.js" },
-    { image: "icon-express.svg", text: "Express.js" },
     { image: "icon-mongodb.svg", text: "MongoDB" },
     { image: "MySQL.png", text: "MySql" },
     { image: "icon-cypress.svg", text: "Cypress" },
@@ -32,7 +32,7 @@ const Skills = () => {
         {skills.map((item, index) => (
           <div key={index} className="mx-auto text-center">
             <Image
-            className="hover:scale-110 transition-all"
+              className="hover:scale-110 transition-all"
               style={{ height: 90 }}
               src={`/images/${item.image}`}
               width={90}
