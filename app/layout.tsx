@@ -29,11 +29,14 @@ export default function RootLayout({
           content="I’m a full-stack developer. I am not satisfied with my skill and working hard towards a higher skill. I have been developing web applications for over 4 years. I aim to make high-quality works with 100% effort for all customers."
         />
         <link
-          rel="shortcut icon"
-          href="/images/avt.jpg"
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/images/avt-head.jpg"
           className="rounded-full"
-        ></link>
-        <meta property="og:image" content="/images/avt.jpg" />
+        />
+
+        <meta property="og:image" content="/images/avt-head.jpg" />
         <meta property="og:title" content="Hoai Tran Dev" />
         <meta
           property="og:description"
@@ -42,13 +45,7 @@ export default function RootLayout({
         <meta property="og:url" content="https://hoaitran.netlify.app" />
         <meta property="og:type" content="website" />
 
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/images/avt.jpg"
-          className="rounded-full"
-        />
+        <link rel="icon" href="/globe.svg" />
         {/* Add the Google Tag Manager script */}
         <Script id="gtm-script" strategy="afterInteractive">
           {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PGRSWW4X');`}
