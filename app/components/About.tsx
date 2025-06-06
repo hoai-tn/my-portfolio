@@ -3,6 +3,29 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 
 const About = () => {
+  const techCategories = [
+    {
+      category: 'Frontend',
+      technologies: ['React.js', 'Vue', 'Next.js', 'Nuxt.js', 'TypeScript', 'JavaScript (ES6+)']
+    },
+    {
+      category: 'Backend',
+      technologies: ['Node.js', 'Express', 'C#/.NET', 'Python', 'GraphQL', 'REST APIs']
+    },
+    {
+      category: 'Databases',
+      technologies: ['PostgreSQL', 'MongoDB', 'MySQL', 'Redis', 'Prisma']
+    },
+    {
+      category: 'Cloud & DevOps',
+      technologies: ['AWS', 'Docker', 'CI/CD', 'Vercel', 'Netlify']
+    },
+    {
+      category: 'Tools & Others',
+      technologies: ['Git', 'GitHub', 'VS Code', 'Figma', 'Postman']
+    }
+  ];
+
   return (
     <section id="about" className="section">
       <div className="space-y-8">
@@ -50,37 +73,32 @@ const About = () => {
           frameworks.
         </p>
 
-        <div className="mt-12">
-          <p className="text-[var(--text-secondary)] mb-6 text-lg font-medium">
-            Here are a few technologies I&apos;ve been working with recently:
+        {/* <div className="mt-12">
+          <p className="text-[var(--text-secondary)] mb-8 text-lg font-medium">
+            Here are the technologies I&apos;ve been working with:
           </p>
-          <div className="flex flex-wrap gap-2">
-            {[
-              'React',
-              'Vue',
-              'Express',
-              'C#/.NET',
-              'Next.js',
-              'Nuxt.js',
-              'MySql',
-              'PostgreSQL',
-              'MongoDB',
-              'AWS',
-              'Docker',
-              'GraphQL',
-              'Redis',
-              'Git',
-            ].map((tech, index) => (
-              <Badge
-                key={index}
-                variant="secondary"
-                className="bg-[var(--glass-bg)] border-[var(--border-accent)] text-[var(--accent-primary)] hover:bg-[var(--accent-primary)] hover:text-black font-mono text-xs"
-              >
-                {tech}
-              </Badge>
+          
+          <div className="space-y-6">
+            {techCategories.map((category, categoryIndex) => (
+              <div key={categoryIndex} className="space-y-3">
+                <h4 className="text-[var(--accent-primary)] font-semibold text-sm uppercase tracking-wider font-mono">
+                  {category.category}
+                </h4>
+                <div className="flex flex-wrap gap-2">
+                  {category.technologies.map((tech, techIndex) => (
+                    <Badge
+                      key={techIndex}
+                      variant="secondary"
+                      className="bg-[var(--glass-bg)] border-[var(--border-accent)] text-[var(--accent-primary)] hover:bg-[var(--accent-primary)] hover:text-black font-mono text-xs transition-all duration-300"
+                    >
+                      {tech}
+                    </Badge>
+                  ))}
+                </div>
+              </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         <Card className="mt-12 bg-[var(--glass-bg)] border-[var(--glass-border)] backdrop-blur-sm">
           <CardContent className="p-6">
