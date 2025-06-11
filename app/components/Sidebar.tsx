@@ -62,7 +62,7 @@ const Sidebar = () => {
         <div>
           <div className="mb-12">
             <h1 className="text-4xl lg:text-5xl font-bold text-[var(--text-primary)] mb-3 leading-tight">
-              Hoai Tran
+              Narti OH
             </h1>
             <h2 className="text-xl lg:text-2xl font-medium text-[var(--accent-primary)] mb-6 tracking-wide">
               Full Stack Developer

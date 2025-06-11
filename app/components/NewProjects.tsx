@@ -17,6 +17,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel';
+import { cn } from '@/lib/utils';
 
 const NewProjects = () => {
   const projects = [
@@ -24,7 +25,16 @@ const NewProjects = () => {
       title: 'CTM (Copy Trade Market)',
       description:
         'A platform for copy trading, allowing users to replicate the strategies of successful traders. It provides a marketplace for traders to share strategies, enabling subscribers to automatically copy their trades.',
-      technologies: ['Vue.js', '.NET', 'MySQL', 'MT4 API', 'Cypress'],
+      technologies: [
+        'Vue.js',
+        '.NET',
+        'MySQL',
+        'Micro Service',
+        'Redis',
+        'RabbitMQ',
+        'MT4 API',
+        'Cypress',
+      ],
       images: [
         '/images/ctm-project3.png',
         '/images/ctm-project.png',
@@ -50,6 +60,31 @@ const NewProjects = () => {
       ],
       github: 'https://github.com/your-username/clouthub',
       external: 'https://clouthub.com',
+      featured: true,
+      isLightTheme: true,
+    },
+    {
+      title: 'SAP (Swap Scanner)',
+      description:
+        "It's a tool that helps you find profitable opportunities in Forex and crypto trading by comparing swap rates from different brokers in real time.",
+      technologies: [
+        'Next.js',
+        '.NET',
+        'MySQL',
+        'Micro Service',
+        'Redis',
+        'RabbitMQ',
+        'MT4 API',
+      ],
+      images: [
+        '/images/sap/dashboard-1.png',
+        '/images/sap/dashboard-2.png',
+        '/images/sap/dashboard-3.png',
+        '/images/sap/home.png',
+        '/images/sap/pricing.png',
+      ],
+      github: 'https://github.com/your-username/ctm-platform',
+      external: 'https://ctm-platform.com',
       featured: true,
     },
     {
@@ -112,34 +147,46 @@ const NewProjects = () => {
                 index % 2 === 1 ? 'md:order-2' : ''
               }`}
             >
-              <a href={project.external} target="_blank" rel="noopener noreferrer">
-                <Card className="bg-transparent border-[var(--glass-border)] overflow-hidden shadow-lg">
-                  <CardContent className="p-0">
-                    <Carousel className="w-full">
-                      <CarouselContent>
-                        {project.images.map((image, imgIndex) => (
-                          <CarouselItem key={imgIndex}>
-                            <div className="aspect-video relative">
-                              <Image
-                                src={image}
-                                alt={`${project.title} screenshot ${imgIndex + 1}`}
-                                fill
-                                className="object-cover transition-all duration-300 group-hover:scale-105"
-                              />
-                            </div>
-                          </CarouselItem>
-                        ))}
-                      </CarouselContent>
-                      {project.images.length > 1 && (
-                        <>
-                          <CarouselPrevious className="left-4 bg-[var(--glass-bg)] border-[var(--glass-border)] text-[var(--text-primary)] hover:bg-[var(--accent-primary)]/80 hover:text-black" />
-                          <CarouselNext className="right-4 bg-[var(--glass-bg)] border-[var(--glass-border)] text-[var(--text-primary)] hover:bg-[var(--accent-primary)]/80 hover:text-black" />
-                        </>
-                      )}
-                    </Carousel>
-                  </CardContent>
-                </Card>
-              </a>
+              <Card className="bg-transparent border-[var(--glass-border)] overflow-hidden shadow-lg">
+                <CardContent className="p-0">
+                  <Carousel className="w-full">
+                    <CarouselContent>
+                      {project.images.map((image, imgIndex) => (
+                        <CarouselItem key={imgIndex}>
+                          <div className="aspect-video relative">
+                            <Image
+                              src={image}
+                              alt={`${project.title} screenshot ${
+                                imgIndex + 1
+                              }`}
+                              fill
+                              className="object-cover transition-all duration-300 group-hover:scale-105"
+                            />
+                          </div>
+                        </CarouselItem>
+                      ))}
+                    </CarouselContent>
+                    {project.images.length > 1 && (
+                      <>
+                        <CarouselPrevious
+                          className={cn(
+                            'left-4 bg-[var(--glass-bg)] border-[var(--glass-border)] text-[var(--text-primary)] hover:bg-[var(--accent-primary)]/80 hover:text-black',
+                            project.isLightTheme &&
+                              'bg-black/60 text-white hover:bg-black/60 hover:text-white'
+                          )}
+                        />
+                        <CarouselNext
+                          className={cn(
+                            'right-4 bg-[var(--glass-bg)] border-[var(--glass-border)] text-[var(--text-primary)] hover:bg-[var(--accent-primary)]/80 hover:text-black',
+                            project.isLightTheme &&
+                              'bg-black/60 text-white hover:bg-black/60 hover:text-white'
+                          )}
+                        />
+                      </>
+                    )}
+                  </Carousel>
+                </CardContent>
+              </Card>
             </div>
 
             <div
@@ -150,7 +197,7 @@ const NewProjects = () => {
               <p className="font-mono text-sm text-[var(--accent-primary)] mb-2">
                 Featured Project
               </p>
-              <h3 className="text-2xl lg:text-3xl font-bold text-[var(--text-primary)] mb-4">
+              <h3 className="text-xl lg:text-2xl font-bold text-[var(--text-primary)] mb-4">
                 <a
                   href={project.external}
                   target="_blank"
