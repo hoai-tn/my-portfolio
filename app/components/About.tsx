@@ -30,47 +30,27 @@ const About = () => {
     <section id="about" className="section">
       <div className="space-y-8">
         <p className="text-lg text-[var(--text-secondary)] leading-relaxed">
-          I&apos;m a developer passionate about crafting{' '}
-          <span className="highlight">accessible, pixel-perfect</span> user
-          interfaces that blend thoughtful design with robust engineering. My
-          favorite work lies at the intersection of design and development,
-          creating experiences that not only look great but are meticulously
-          built for performance and usability.
+          I&apos;m a passionate <span className="highlight">Full-Stack Developer</span> with{' '}
+          <span className="highlight">5+ years of experience</span> building modern web applications. 
+          My journey started with curiosity about how websites work, and it evolved into a deep love 
+          for creating <span className="highlight">clean, efficient, and scalable solutions</span>.
         </p>
 
         <p className="text-lg text-[var(--text-secondary)] leading-relaxed">
-          Currently, I&apos;m a{' '}
-          <span className="highlight">Senior Full-Stack Developer</span>{' '}
-          specializing in modern web technologies. I contribute to the creation
-          and maintenance of web applications that power businesses, ensuring
-          our platforms meet web standards and best practices to deliver an
-          exceptional user experience.
+          Throughout my career, I&apos;ve worked across diverse industries — from{' '}
+          <span className="highlight">fintech platforms</span> and{' '}
+          <span className="highlight">social networks</span> to{' '}
+          <span className="highlight">e-commerce solutions</span>. Each project taught me something new 
+          and fueled my <span className="highlight">endless curiosity</span> for emerging technologies 
+          and best practices.
         </p>
 
         <p className="text-lg text-[var(--text-secondary)] leading-relaxed">
-          In the past, I&apos;ve had the opportunity to develop software across
-          a variety of settings — from{' '}
-          <span className="highlight">advertising agencies</span> and{' '}
-          <span className="highlight">large corporations</span> to{' '}
-          <span className="highlight">start-ups</span> and{' '}
-          <span className="highlight">small digital product studios</span>.
-          Additionally, I also released a{' '}
-          <a
-            href="#"
-            className="company-link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            comprehensive video course
-          </a>{' '}
-          a few years ago, guiding learners through building modern web
-          applications.
-        </p>
-
-        <p className="text-lg text-[var(--text-secondary)] leading-relaxed">
-          In my spare time, I&apos;m usually coding side projects, reading tech
-          blogs, hanging out with family, or exploring new technologies and
-          frameworks.
+          What drives me? The thrill of <span className="highlight">solving complex problems</span> and 
+          seeing ideas come to life through code. I&apos;m always eager to{' '}
+          <span className="highlight">learn new technologies</span>, contribute to meaningful projects, 
+          and collaborate with teams that share my passion for{' '}
+          <span className="highlight">building exceptional digital experiences</span>.
         </p>
 
         {/* <div className="mt-12">
@@ -100,7 +80,7 @@ const About = () => {
           </div>
         </div> */}
 
-        <Card className="mt-12 bg-[var(--glass-bg)] border-[var(--glass-border)] backdrop-blur-sm">
+        {/* <Card className="mt-12 bg-[var(--glass-bg)] border-[var(--glass-border)] backdrop-blur-sm">
           <CardContent className="p-6">
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 rounded-full bg-gradient-to-r from-[var(--accent-primary)] to-[var(--accent-secondary)] flex items-center justify-center text-lg font-bold text-black">
@@ -119,7 +99,7 @@ const About = () => {
               </div>
             </div>
           </CardContent>
-        </Card>
+        </Card> */}
       </div>
     </section>
   );
