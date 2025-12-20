@@ -4,11 +4,7 @@ import React, { useState } from "react";
 import {
   Github,
   ExternalLink,
-  Folder,
-  Award,
-  Users,
   TrendingUp,
-  Shield,
 } from "lucide-react";
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
@@ -89,8 +85,7 @@ const NewProjects = () => {
         "/images/ctm-project1.png",
         "/images/ctm-project4.png",
       ],
-      github: "https://github.com/your-username/ctm-platform",
-      external: "https://ctm-platform.com",
+      external: "https://www.copytrade-market.com",
       featured: true,
       complexity: "Professional",
       role: "Full-Stack Developer",
@@ -141,7 +136,7 @@ const NewProjects = () => {
         "/images/clouthub3.png",
         "/images/clouthub4.png",
       ],
-      github: "https://github.com/your-username/clouthub",
+      // github: "https://github.com/your-username/clouthub",
       external: "https://new.clouthub.com/",
       featured: true,
       isLightTheme: true,
@@ -181,8 +176,7 @@ const NewProjects = () => {
         "/images/sap/home.png",
         "/images/sap/pricing.png",
       ],
-      github: "https://github.com/your-username/ctm-platform",
-      external: "https://ctm-platform.com",
+      external: "https://preview.swapscanner.com/",
       featured: true,
       complexity: "Enterprise",
       role: "Full-Stack Developer",
@@ -323,7 +317,7 @@ const NewProjects = () => {
                     }}
                     plugins={[
                       Autoplay({
-                        delay: 4000,
+                        delay: 8000,
                         stopOnInteraction: true,
                         stopOnMouseEnter: true,
                       }),
