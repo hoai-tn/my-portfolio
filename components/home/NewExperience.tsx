@@ -112,7 +112,7 @@ const NewExperience = () => {
       company: 'INS-ENCO Ltd.',
       position: 'Fullstack Developer',
       duration: 'JAN 2020 -  Now',
-      location: 'Germany (Remote from Vietnam)',
+      location: 'Germany',
       type: 'Full-time',
       description: [
         'Developed and maintained a full-stack investment project using Vue, React, .NET, and Express, focusing on both frontend and backend aspects.',

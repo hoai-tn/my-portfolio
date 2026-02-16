@@ -114,7 +114,7 @@ const NewProjects = () => {
       external: "https://coolpix.io/",
       featured: true,
       isLightTheme: true,
-      complexity: "Professional",
+      complexity: "Enterprise",
       role: "Frontend Developer",
     },
     {
