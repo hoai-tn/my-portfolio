@@ -186,7 +186,7 @@ const EditorContent = ({ exp }: { exp: Experience }) => {
 
       {/* Responsibilities */}
       <SyntaxLine lineNum={line++} delay={baseDelay * 10}>
-        <Comment>// What I do</Comment>
+        <Comment>{"// What I do"}</Comment>
       </SyntaxLine>
 
       <SyntaxLine lineNum={line++} delay={baseDelay * 11}>
