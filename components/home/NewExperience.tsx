@@ -75,12 +75,12 @@ const SyntaxLine = ({
   delay?: number;
 }) => (
   <motion.div
-    className="flex font-mono text-sm leading-7 group/line"
+    className="flex font-mono text-xs sm:text-sm leading-6 sm:leading-7 group/line"
     initial={{ opacity: 0, x: -8 }}
     animate={{ opacity: 1, x: 0 }}
     transition={{ duration: 0.3, delay }}
   >
-    <span className="w-10 text-right pr-4 text-[var(--text-dimmed)] select-none shrink-0 group-hover/line:text-[var(--text-muted)] transition-colors text-xs">
+    <span className="w-8 sm:w-10 text-right pr-2 sm:pr-4 text-[var(--text-dimmed)] select-none shrink-0 group-hover/line:text-[var(--text-muted)] transition-colors text-xs">
       {lineNum}
     </span>
     <span style={{ paddingLeft: `${indent * 20}px` }}>{children}</span>
@@ -116,7 +116,7 @@ const EditorContent = ({ exp }: { exp: Experience }) => {
   const baseDelay = 0.05;
 
   return (
-    <div className="py-4 px-2 overflow-x-auto">
+    <div className="py-4 px-3 sm:px-4 overflow-x-auto">
       {/* Import statement */}
       <SyntaxLine lineNum={line++} delay={baseDelay * 0}>
         <Keyword>import</Keyword> <Punct>{'{ '}</Punct>
@@ -303,7 +303,7 @@ const NewExperience = () => {
               key={exp.id}
               onClick={() => setActiveTab(index)}
               className={`
-                relative px-5 py-2.5 text-sm font-mono transition-colors duration-200
+                relative px-3 sm:px-5 py-2.5 text-xs sm:text-sm font-mono transition-colors duration-200
                 border-r border-[var(--glass-border)]
                 ${
                   activeTab === index
