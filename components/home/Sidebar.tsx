@@ -4,6 +4,7 @@ import Image from 'next/image';
 import React, { useState, useEffect, useMemo } from 'react';
 import { Github, Linkedin, Mail, ExternalLink, MailIcon,  } from 'lucide-react';
 import upworkIcon from '@/public/images/uw.png';
+import avatarImg from '@/public/images/avatar.jpeg';
 const Upwork = () => {
   return <Image src={upworkIcon}  className='w-6 h-6' alt="Upwork"  />;
 };
@@ -14,6 +15,7 @@ const Sidebar = () => {
     { id: 'about', label: 'About' },
     { id: 'experience', label: 'Experience' },  
     { id: 'projects', label: 'Projects' },
+    { id: 'testimonials', label: 'Testimonials' },
     { id: 'contact', label: 'Contact' },
   ], []);
 
@@ -69,16 +71,23 @@ const Sidebar = () => {
     <>
       <div className="sidebar">
         <div>
-          <div className="mb-12">
-            <h1 className="text-2xl lg:text-4xl font-bold text-[var(--text-primary)] mb-3 leading-tight">
-              Hoai Tran
-            </h1>
-            <h2 className="text-xl lg:text-2xl font-medium text-[var(--accent-primary)] mb-6 tracking-wide">
-              Software Developer
-            </h2>
-            <p className="text-[var(--text-muted)] text-base leading-relaxed">
-              I build accessible, pixel-perfect digital experiences with modern technologies and clean code.
-            </p>
+          <div className="mb-10 flex flex-col items-center text-center gap-4">
+            <div className="w-[8rem] h-[8rem] rounded-full overflow-hidden border-2 border-[var(--accent-primary)] shadow-lg shrink-0">
+              <Image
+                src={avatarImg}
+                alt="Hoai Tran"
+                className="w-full h-full object-cover"
+                priority
+              />
+            </div>
+            <div>
+              <h1 className="text-2xl lg:text-4xl font-bold text-[var(--text-primary)] mb-2 leading-tight">
+                Hoai Tran
+              </h1>
+              <h2 className="text-lg font-medium text-[var(--accent-primary)] tracking-wide">
+                Software Developer
+              </h2>
+            </div>
           </div>
 
           <nav className="space-y-2">
