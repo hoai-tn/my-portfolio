@@ -11,7 +11,7 @@ export default function Home() {
     <div className="main-container">
       <Sidebar />
       
-      <main className="main-content">
+      <main id="main-content" className="main-content">
         <About />
         <NewExperience />
         <NewProjects />

@@ -16,9 +16,9 @@ const NewContact = () => {
         </h2>
         
         <p className="text-lg text-[var(--text-secondary)] leading-relaxed mb-12 max-w-lg mx-auto">
-          Although I&apos;m not currently looking for any new opportunities, my inbox is 
-          always open. Whether you have a question or just want to say hi, I&apos;ll 
-          try my best to get back to you!
+          I&apos;m always open to new opportunities and exciting projects. Whether you
+          need a reliable developer for your team or want to bring an idea to life,
+          let&apos;s connect and make it happen.
         </p>
         
         <Button
@@ -26,7 +26,7 @@ const NewContact = () => {
           size="lg"
           className="bg-transparent border-2 border-[var(--accent-primary)] text-[var(--accent-primary)] font-mono text-sm uppercase tracking-wider hover:bg-[var(--accent-primary)] hover:text-black transition-all duration-300 rounded-full px-8 py-6"
         >
-          <a href="mailto:hoai.nart.dev@example.com">
+          <a href="mailto:hoai.nart.dev@gmail.com">
             Say Hello
           </a>
         </Button>

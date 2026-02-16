@@ -4,21 +4,18 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import {
   Star,
   ExternalLink,
   Quote,
   ChevronLeft,
   ChevronRight,
-  Verified,
 } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
   Navigation,
   Pagination,
   Autoplay,
-  EffectCreative,
 } from "swiper/modules";
 import type { Swiper as SwiperType } from "swiper";
 
@@ -26,7 +23,6 @@ import type { Swiper as SwiperType } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import "swiper/css/effect-creative";
 
 const Testimonials = () => {
   const [swiperRef, setSwiperRef] = React.useState<SwiperType | null>(null);
@@ -38,7 +34,7 @@ const Testimonials = () => {
       rating: 5,
       platform: "Upwork",
       quoteUrl:
-        "https://www.linkedin.com/posts/hoai-tran-878b7a244_see-how-i-can-get-your-project-done-on-upwork-activity-7339564490201407488-S7hR?utm_source=share&utm_medium=member_desktop&rcm=ACoAADyvg1wBGFv8eyadswo8OCRyuCRVY4pi2ds",
+        "https://www.upwork.com/freelancers/~01d124102c4262bfad",
     },
     {
       name: "Paul Hammant",
@@ -46,15 +42,7 @@ const Testimonials = () => {
       rating: 5,
       platform: "Upwork",
       quoteUrl:
-        "https://www.linkedin.com/posts/hoai-tran-878b7a244_see-how-i-can-get-your-project-done-on-upwork-activity-7094611396075630592-0MHa?utm_source=share&utm_medium=member_desktop&rcm=ACoAADyvg1wBGFv8eyadswo8OCRyuCRVY4pi2ds",
-    },
-    {
-      name: "An lih",
-      quote: `Hoai is a great developer who is able to debug well and get the code working. I highly recommend him`,
-      rating: 5,
-      platform: "Upwork",
-      quoteUrl:
-        "https://www.linkedin.com/posts/hoai-tran-878b7a244_see-how-i-can-get-your-project-done-on-upwork-activity-7339564490201407488-S7hR?utm_source=share&utm_medium=member_desktop&rcm=ACoAADyvg1wBGFv8eyadswo8OCRyuCRVY4pi2ds",
+        "https://www.upwork.com/freelancers/~01d124102c4262bfad",
     },
     {
       name: "Terasa Truda",
@@ -62,7 +50,7 @@ const Testimonials = () => {
       rating: 5,
       platform: "Upwork",
       quoteUrl:
-        "https://www.linkedin.com/posts/hoai-tran-878b7a244_see-how-i-can-get-your-project-done-on-upwork-activity-7082646245206364160-5x8j?utm_source=share&utm_medium=member_desktop&rcm=ACoAADyvg1wBGFv8eyadswo8OCRyuCRVY4pi2ds",
+        "https://www.upwork.com/freelancers/~01d124102c4262bfad",
     },
     {
       name: "Uzodimma Chiapa",
@@ -70,23 +58,7 @@ const Testimonials = () => {
       rating: 5,
       platform: "Upwork",
       quoteUrl:
-        "https://www.linkedin.com/posts/hoai-tran-878b7a244_see-how-i-can-get-your-project-done-on-upwork-activity-7094611396075630592-0MHa?utm_source=share&utm_medium=member_desktop&rcm=ACoAADyvg1wBGFv8eyadswo8OCRyuCRVY4pi2ds",
-    },
-    {
-      name: "Paul Hammant",
-      quote: `React Component with Storybook+Cypress tests quickly developed by Hoai. Nx build system and Jests tests, too.`,
-      rating: 5,
-      platform: "Upwork",
-      quoteUrl:
-        "https://www.linkedin.com/posts/hoai-tran-878b7a244_see-how-i-can-get-your-project-done-on-upwork-activity-7094611396075630592-0MHa?utm_source=share&utm_medium=member_desktop&rcm=ACoAADyvg1wBGFv8eyadswo8OCRyuCRVY4pi2ds",
-    },
-    {
-      name: "Uzodimma Chiapa",
-      quote: `Works at his own pace, I would say if I wasn't in a rush and if he could work full time, I would continue to work with him. He is a good developer.`,
-      rating: 5,
-      platform: "Upwork",
-      quoteUrl:
-        "https://www.linkedin.com/posts/hoai-tran-878b7a244_see-how-i-can-get-your-project-done-on-upwork-activity-7094611396075630592-0MHa?utm_source=share&utm_medium=member_desktop&rcm=ACoAADyvg1wBGFv8eyadswo8OCRyuCRVY4pi2ds",
+        "https://www.upwork.com/freelancers/~01d124102c4262bfad",
     },
   ];
 
@@ -206,8 +178,9 @@ const Testimonials = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-[var(--text-muted)] hover:text-[var(--accent-primary)] transition-colors"
+                      aria-label={`View ${testimonial.name}'s review on Upwork`}
                     >
-                      <ExternalLink size={16} />
+                      <ExternalLink size={16} aria-hidden="true" />
                     </Link>
                   </div>
                 </CardContent>
